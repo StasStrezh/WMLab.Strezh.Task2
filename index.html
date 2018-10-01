@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Searching giffs</title>
+</head>
+<body id="dy">
+<div class="head">
+    <h2>Search Application</h2>
+    <div class="tab">
+        <button class="tablinks gif" onclick="openTab(event, 'Gif')" id="default">Gif</button>
+        <button class="tablinks sticker" onclick="openTab(event, 'Stickers')" >Stickers</button>
+        <button class="tablinks favourites" onclick="openTab(event, 'Favourite')">Favourite</button>
+    </div>
+</div>
+
+<form>
+    <input name="query" placeholder="search giphy.com" autofocus/>
+    <button type="submit">search</button>
+</form>
+<div id="Gif" class="Tabcontent"></div>
+<div id="Stickers" class="Tabcontent"></div>
+<div id="Favourites" class="Tabcontent"></div>
+
+<script src="Main.js"></script>
+
+</body>
+</html>
